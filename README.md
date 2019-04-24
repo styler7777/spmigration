@@ -77,6 +77,12 @@ Check Job status of the system if dryrun was successful before run the above com
   -newbase NEW_BASE_CHANNEL, --new_base_channel NEW_BASE_CHANNEL
   
   Enter the new base channel label. e.g. sles12-sp4-pool-x86_64
+  
+  -g system group containing the systems to migrate
+  
+  -v verbose logging
+  -vv extremely verbose logging
+  
                         
  ```
  ## Enhancements for future version
