@@ -29,10 +29,9 @@ l-x86_64 -vv \n \
 * __Check the system has subscribable base channels__
 * __Check the target base channel exists__
 * __Check remaining upgradable packages__ - at the moment the script verifies each system if it has any upgradable rpm packages. If it is the case this system will be disqualified from service pack migration and dropped out from the list.
-* Query api to check if the systems have been marked as "inactive". Inactive systems will be pulled out from the systems list.
+* __Check for inactive systems__ Query api to check if the systems have been marked as "inactive". Inactive systems will be pulled out from the systems list.
 * __Checking salt minion online status__ - Then the script will take the matching list of systems and issue salt hostname test.ping to check if the system is online.
 * __Avoid job creation for offline systems__ - If salt test.ping is successful then a service pack migration **job** in SUSE Manager with the given target sp version will be created, for each single node.
-* For systems that are qualified for service pack migration 
 * __Confirm the systems___ Show the systems which will be migrated and ask for user confirmation before continuing
 * __Schedule Jobs in SUSE Manager__ - A job ID will be returned.
 
